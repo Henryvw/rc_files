@@ -1,8 +1,14 @@
-syntax on
+let g:NERDTreeWinSize=34
+nmap ,d :NERDTreeFind<CR>
+
+syntax enable
+set t_Co=256
 autocmd vimenter * NERDTree
 set number
 set background=dark
-colorscheme heroku-terminal
+
+colorscheme seti
+
 execute pathogen#infect()
 filetype plugin indent on
 set runtimepath^=~/.vim/bundle/ctrlp.vim
@@ -23,3 +29,4 @@ noremap <Up> <NOP>
 noremap <Down> <NOP>
 noremap <Left> <NOP>
 noremap <Right> <NOP>
+
